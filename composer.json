@@ -1,0 +1,13 @@
+{
+    "name": "MITLibraries/Custom-Child-Theme-Post-Types",
+    "description": "A plugin that adds custom post types for Exhibits theme",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Phillip Bruk for MIT Libraries",
+            "email": "web-lib@mit.edu"
+        }
+    ],
+    "require": {}
+}
