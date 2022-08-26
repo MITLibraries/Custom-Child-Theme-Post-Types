@@ -3,7 +3,7 @@
  * Plugin Name: MITlib Custom Child Theme Post Types
  * Plugin URI: https://github.com/MITLibraries/Custom-Child-Theme-Post-Types
  * Description: A plugin that adds custom post types for Exhibits theme
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: Phillip Bruk for MIT Libraries
  * License: GPL2
  *
@@ -11,6 +11,10 @@
  * @author Phillip Bruk for MIT Libraries
  * @link https://github.com/MITLibraries/Custom-Child-Theme-Post-Types
  */
+
+require plugin_dir_path( __FILE__ ) . 'src/class-integritywidget.php';
+
+add_action( 'wp_dashboard_setup', array( 'IntegrityWidget', 'init' ) );
 
 if ( ! function_exists( 'exhibit_post_type' ) ) {
 	/**
